@@ -226,7 +226,9 @@ div.form-row { margin-bottom: 24px}
 .in-better-view .grid-advantages .columns p:nth-child(2) { transition: all 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s}
 .in-better-view .grid-advantages .columns p:nth-child(3) { transition: all 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) .3s}
 
-
+.bold{
+	font-weight: 700 !important;
+}
 @keyframes slide-in-top {
   0% { transform: translateY(-300px); opacity: 0;}
   100% {transform: translateY(0);opacity: 1;}

@@ -83,52 +83,44 @@
                                         <p>Thank you for your interest. </p>
                                    </div>
 
-                                   <form action="/do-register" method="POST" id="frmContact" class="validateme"
-                                        data-adwords="AW-11132361735/6_hWCKyY35QYEIe4qbwp"
-                                        data-event-name="Registration" data-submit-type="Inline" data-thank-you=""
-                                        enctype="multipart/form-data">
-                                        <input type="hidden" name="Origin" id="Origin" value="Footer">
-                                        <input type="hidden" name="Submitted" id="Submitted" value="">
-                                        <input type="hidden" name="g-recaptcha-response" value="">
-                                        <input type="hidden" name="cid" value="1">
-
+                                   <form method="POST" id="frmContact" class="validateme">
                                         <fieldset>
                                              <div class="form-row">
-                                                  <div class="field mandatory"><label for="FirstName">First
-                                                            Name</label><input type="text" name="FirstName"
-                                                            id="FirstName" placeholder="First Name *"
+                                                  <div class="field mandatory"><label for="first_name">First
+                                                            Name</label><input type="text" name="first_name"
+                                                            id="first_name" placeholder="First Name *"
                                                             config-max-length="128" class=""></div>
                                              </div>
                                              <div class="form-row">
-                                                  <div class="field mandatory"><label for="LastName">Last
-                                                            Name</label><input type="text" name="LastName" id="LastName"
-                                                            placeholder="Last Name *" config-max-length="128" class="">
+                                                  <div class="field mandatory"><label for="last_name">Last
+                                                            Name</label><input type="text" name="last_name"
+                                                            id="last_name" placeholder="Last Name *"
+                                                            config-max-length="128" class="">
                                                   </div>
                                              </div>
                                              <div class="form-row">
-                                                  <div class="field mandatory"><label for="Email">Email</label><input
-                                                            type="text" name="Email" id="Email" placeholder="Email *"
+                                                  <div class="field mandatory"><label for="email">Email</label><input
+                                                            type="text" name="email" id="email" placeholder="Email *"
                                                             config-max-length="128" class="js-email"></div>
                                              </div>
                                              <div class="form-row x_2">
-                                                  <div class="field mandatory"><label for="Phone">Phone</label><input
-                                                            type="text" name="Phone" id="Phone" placeholder="Phone *"
+                                                  <div class="field mandatory"><label for="phone">Phone</label><input
+                                                            type="text" name="phone" id="phone" placeholder="Phone *"
                                                             config-max-length="128" class="js-phone"></div>
-                                                  <div class="field"><label for="PostalCode">Postal Code</label><input
-                                                            type="text" name="PostalCode" id="PostalCode"
+                                                  <div class="field"><label for="postal_code">Postal Code</label><input
+                                                            type="text" name="postal_code" id="postal_code"
                                                             placeholder="Postal Code " config-max-length="32"></div>
                                              </div>
                                              <div class="form-row x_2">
-                                                  <div class="field mandatory"><label for="IsBroker">Are you a
-                                                            Realtor</label><select name="IsBroker" id="IsBroker"
+                                                  <div class="field mandatory"><label for="is_a_realtor">Are you a
+                                                            Realtor</label><select name="is_a_realtor" id="is_a_realtor"
                                                             placeholder="Are you a Realtor *"
                                                             class="js-select select2-hidden-accessible" tabindex="-1"
                                                             aria-hidden="true">
-                                                            <option></option>
-                                                            <option>No</option>
+                                                            <option selected>No</option>
                                                             <option>Yes</option>
-                                                       </select><span
-                                                            class="select2 select2-container select2-container--default"
+                                                       </select>
+                                                       <span class="select2 select2-container select2-container--default"
                                                             dir="ltr" style="width: 321px;"><span
                                                                  class="selection"><span
                                                                       class="select2-selection select2-selection--single"
@@ -144,15 +136,15 @@
                                                                            role="presentation"><b
                                                                                 role="presentation"></b></span></span></span><span
                                                                  class="dropdown-wrapper"
-                                                                 aria-hidden="true"></span></span></div>
-                                                  <div class="field mandatory"><label for="TypeOfHome">Suite
-                                                            Type</label><select name="TypeOfHome" id="TypeOfHome"
+                                                                 aria-hidden="true"></span></span>
+                                                  </div>
+                                                  <div class="field mandatory"><label for="suite_type">Suite
+                                                            Type</label><select name="suite_type" id="suite_type"
                                                             placeholder="Suite Type *"
                                                             class="js-select select2-hidden-accessible" tabindex="-1"
                                                             aria-hidden="true">
-                                                            <option></option>
                                                             <option>Studio</option>
-                                                            <option>1 Bedroom</option>
+                                                            <option selected>1 Bedroom</option>
                                                             <option>1 Bedroom + Den</option>
                                                             <option>2 Bedroom</option>
                                                             <option>3 Bedroom</option>
@@ -183,34 +175,18 @@
                                         <fieldset>
                                              <div class="form-row x_2_31">
                                                   <div class="field mandatory">
-                                                       <div class="checkbox"><input type="checkbox" name="Consent"
-                                                                 id="Consent" value="0"><label for="Consent">I consent
+                                                       <div class="checkbox"
+                                                            style="display: flex;justify-content: center;">
+                                                            <input type="checkbox" name="Consent" id="Consent" />
+                                                            <label for="Consent">I consent
                                                                  to receive future communications about Kipling Station
                                                                  Condos. I understand I can opt out at anytime by
-                                                                 sending am email. </label></div>
+                                                                 sending am email. </label>
+                                                       </div>
                                                   </div>
                                                   <button id="submit" type="submit">Submit</button>
                                              </div>
                                         </fieldset>
-
-
-
-                                        <div class="g-recaptcha" data-sitekey="6Lf6V1YeAAAAACUrYJGaqmFmm-zfnDmO8QxqNiqv"
-                                             data-callback="afterRecaptcha" data-size="invisible">
-                                             <div class="grecaptcha-badge" data-style="bottomright"
-                                                  style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
-                                                  <div class="grecaptcha-logo"><iframe title="reCAPTCHA"
-                                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lf6V1YeAAAAACUrYJGaqmFmm-zfnDmO8QxqNiqv&amp;co=aHR0cHM6Ly9raXBsaW5nc3RhdGlvbi5jb206NDQz&amp;hl=en&amp;v=6MY32oPwFCn9SUKWt8czDsDw&amp;size=invisible&amp;cb=6827304jv74p"
-                                                            width="256" height="60" role="presentation"
-                                                            name="a-mp7vn5sswdy" frameborder="0" scrolling="no"
-                                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                                  </div>
-                                                  <div class="grecaptcha-error"></div><textarea
-                                                       id="g-recaptcha-response" name="g-recaptcha-response"
-                                                       class="g-recaptcha-response"
-                                                       style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                                             </div><iframe style="display: none;"></iframe>
-                                        </div>
                                    </form>
 
                               </div>
@@ -254,91 +230,19 @@
                                    <p>20 Minutes From Kipling Station</p>
                               </div>
                          </div>
-                         <a href="registration" class="btn scrolling yellow">REGISTER</a>
+                         <a href="#registration" class="btn scrolling yellow">REGISTER</a>
                     </section>
 
 
-                    <!--section class="js-animate slide-in-bottom"  config-animation-better="100">
-               <h2 class="orange"><span>Accelerate</span></h2>
-               <img  src="img/1b.jpg" alt="Image" class="full">
-               <h3>Downtown Etobicoke.</h3>
-               <p>Access the city’s ground-floor opportunity. The new Etobicoke Civic Centre is transforming the neighbourhood, a future hub of employment, finance and lifestyles. Kipling Station Condos lets you fast forward to the extraordinary times ahead. </p>
-               <div class="slideshow">
-                    <div>
-     
-                              <div class="thumb">
-                                   <img  src="img/etobicoke-4.jpg" alt="Image">
-                                   <h4>4</h4>
-                                   <p>Office/Institutional Buildings</p>
-                              </div>
-                              <div class="thumb">
-                                   <img  src="img/etobicoke-5.jpg" alt="Image">
-                                   <h4>1.38 Acre</h4>
-                                   <p>Etobicoke Centre Park</p>
-                              </div>
-                              <div class="thumb">
-                                   <img  src="img/etobicoke-6.jpg" alt="Image">
-                                   <h4>2,300</h4>
-                                   <p>New Residences</p>
-                              </div>
-                              <div class="thumb">
-                                   <img  src="img/etobicoke-7.jpg" alt="Image">
-                                   <h4>233,000 sq.ft.</h4>
-                                   <p>Non-Residential Space</p>
-                              </div>
-                              <div class="thumb">
-                                   <img  src="img/etobicoke-1.jpg" alt="Image">
-                                   <h4>Six Point Malls</h4>
-                                   <p>3 Minutes’ Walk</p>
-                              </div>					
-                              <div class="thumb">
-                                   <img  src="img/etobicoke-2.jpg" alt="Image">
-                                   <h4>Cloverdale Mall</h4>
-                                   <p>5 Minutes’ Drive</p>
-                              </div>
-                              <div class="thumb">
-                                   <img  src="img/etobicoke-3.jpg" alt="Image">
-                                   <h4>Etobicoke Civic Centre</h4>
-                                   <p>7 Minutes’ Drive</p>
-                              </div>
-                              
-                    </div>
-               </div>
-               <a href="registration" class="btn scrolling orange">REGISTER</a>
-          </section>
-     
-          <section class="js-animate slide-in-bottom "  config-animation-better="100">
-               <h2 class="green"><span>Extend</span></h2>
-               <img  src="img/new/2.jpg" alt="Image" class="full">
-               <h3>Design Forward Amenities.</h3>
-               <p>Access the luxuries of elevated design. A curated selection of amenities extend your lifestyle, taking you further each day and every night. From the lobby and co-work area, to the fitness centre, meditation studio, party and dining rooms, the spaces connect people to the places they belong. </p>
-               <a href="registration" class="btn scrolling green">REGISTER</a>
-          </section
-
-
-                    <!--section class="js-animate slide-in-bottom "  config-animation-better="100">
-               <h2 class="purple"><span>Discover</span></h2>
-               <img  src="img/new/3.jpg" alt="Image" class="full">
-               <h3>Suites to Move You.</h3>
-               <p>Access the suite at incredible prices. The collection has been tailored to offer residents the most sought-after floorplan, features and finishes one suite could have. Kipling Station Condos is a community you own once, and for a lifetime. Take your place at the centre of it all.  </p>
-               <a href="registration" class="btn scrolling purple">REGISTER</a>
-          </section-->
 
                     <section>
                          <div class="tagline bold">ARRIVE AT</div>
                          <img src="img/logo.svg" alt="Image" class="bottom-logo">
                          <img src="img/colours.svg" alt="Image" class="colours">
-                         <!--h3>Register to Receive a Priority Pass.</h3-->
-
-
-
-
                     </section>
 
                </article>
           </div>
-
-          <!-- FOOTER -->
           <a id="contact" name="contact"></a>
 
           <footer>
@@ -384,6 +288,68 @@
 
 
      </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+     <script>
+          const form = document.getElementById("frmContact");
+
+          form.addEventListener('submit', (e) => {
+               e.preventDefault();
+               // create a new XMLHttpRequest object
+               const request = new XMLHttpRequest();
+
+               // set the API endpoint URL
+               const url = "https://api.homebaba.ca/api/contact-form-submit-kipling/";
+
+               // set the request method (GET or POST)
+               const method = "POST";
+
+               // set up the request callback function
+               request.onreadystatechange = function () {
+                    if (request.readyState === 4 && request.status === 200) {
+                         // handle the API response here
+                         const response = request.responseText;
+                         console.log(response);
+                         document.getElementById("first_name").value = "";
+                         document.getElementById("last_name").value = "";
+                         document.getElementById("email").value = "";
+                         document.getElementById("phone").value = "";
+                         document.getElementById("postal_code").value = "";
+                         document.getElementById("is_a_realtor").value = "";
+                         document.getElementById("suite_type").value = "";
+                         Swal.fire({
+                              icon: 'success',
+                              title: 'Thank You!',
+                              text: 'We will reach out to you shortly',
+                         })
+
+                    }
+               };
+
+               // create a new FormData object
+               const formData = new FormData();
+
+               // append your form data to the FormData object
+               formData.append('first_name', document.getElementById("first_name").value);
+               formData.append('last_name', document.getElementById("last_name").value);
+               formData.append('name', document.getElementById("first_name").value);
+               formData.append('email', document.getElementById("email").value);
+               formData.append('phone', document.getElementById("phone").value);
+               formData.append('message', "I want to get more information about Kipling station Condos.");
+               formData.append('postal_code', document.getElementById("postal_code").value);
+               formData.append('is_a_realtor', document.getElementById("is_a_realtor").value);
+               formData.append('suite_type', document.getElementById("suite_type").value);
+
+               // open the request and send it
+               request.open(method, url, true);
+               request.send(formData);
+          })
+
+
+
+     </script>
 </body>
 
 </html>

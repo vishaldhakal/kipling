@@ -179,7 +179,6 @@ form { font-family:HelveticaNeueLight; margin: 0px auto 0 0; width: 100%; max-wi
 div.form-col { padding-left: 60px; align-items: flex-end; padding-top: 50px;}
 
 div.checkbox label { font-size: 16px; padding-left: 46px; min-height: 30px; padding-top: 1px; font-family:HelveticaNeueLight;}
-div.checkbox label:before { width: 30px; height: 30px; }
 div.checkbox input:checked + label:before { background-size: 15px 10px;}
 
 input[type="text"], input[type="search"], input[type="tel"], input[type="number"], input[type="email"], input[type="password"] {border-radius: 0px; padding-left: 0px; font-family:HelveticaNeueLight; border-top: 0; border-left: 0; border-right: 0}

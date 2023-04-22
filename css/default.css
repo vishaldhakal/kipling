@@ -50,8 +50,6 @@ ul.listing li, ul.bullets li { display: block; margin-bottom: 1px; line-height: 
 ul.bullets li { text-align: left; padding-left: 20px;}
 ul.bullets li:before { content: ""; position: absolute; display: block; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 6px; background: var(--col-text);}
 ul.listing.left li  { text-align: left;}
-
-input, textarea { -webkit-appearance: none; -webkit-border-radius: 0;}
 input[type="radio"] { -webkit-appearance: inherit;} 
 input[type="submit"] { cursor: pointer;}
 
@@ -201,9 +199,7 @@ div.radio label:after { content: ""; display: block; position: absolute; top: 3p
 div.radio input[type=radio]:checked + label:after { background-color: #ccc;   border: 3px solid var(--col-border);}
 
 div.checkbox { display: block; text-align: left; position: relative; width: 100%; }
-div.checkbox input[type="checkbox"] { display: none;}
 div.checkbox label { display: block; color: var(--col-input);; font-family: inherit; text-align: left; position: relative; width: 100%; font-size: var(--default-input-font-size); padding-left: 31px; min-height: 20px; padding-top: 1px; line-height: 1.25;}
-div.checkbox label:before { content:""; position: absolute; left:0; top: 0; border: 1px solid var(--col-border); background: transparent; display: block; width: 20px; height: 20px; box-sizing: border-box;}
 div.missing div.checkbox label:before { border-color: var(--col-error); -webkit-animation: pulse .5s 1; animation: pulse .5s 1; }
 div.checkbox input:checked + label:before { background: url(/lib/img/dark/checkmark.svg) no-repeat center center; background-size: 14px 12px;}
 
